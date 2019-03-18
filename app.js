@@ -9,3 +9,6 @@ const port = process.env.Port || 5000;
 app.get("/", (req, res) => res.send("hello world!"));
 // make GET request to "/" url
 
+app.listen(port, () => console.log(`server is running on port ${port}`));
+// tell express to start a socket and listen for connections on the path
+
